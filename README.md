@@ -15,7 +15,8 @@ Sample code for reported issue in testcafe-reporter-cucumber-json
   - Browser doesn't closes after completion of all tests and json report is not generated.
   - Tests complete successfully and report json has no failed test details (elemets array in report.json has only passed tests elements. This is resulting in HTML reports with 100% success)
   
- In my project, we run `.testcafe` files in our CI/CD pipeline and publish the html report for reporting. I have `.js` files here to demonstrate the problem
+ In my project, we run `.testcafe` files in our CI/CD pipeline and publish the html report for reporting. 
+ I used `.js` files here only to demonstrate the problem and show the difference.
  
  ** Testcafe configuration **
 ```
@@ -25,3 +26,5 @@ Sample code for reported issue in testcafe-reporter-cucumber-json
   "src": ["./tests/*.testcafe"] 
 }
 ```
+- OS : mac (In local env), Linux (Server)
+- Browser: Chrome (In local env), Chromium Headless (Server)
