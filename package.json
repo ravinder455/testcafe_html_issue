@@ -1,0 +1,23 @@
+{
+  "name": "testcafe_html_issue",
+  "version": "1.0.0",
+  "author": "RRC",
+  "license": "UNLICENSED",
+  "scripts": {
+    "testTc": "./node_modules/.bin/testcafe chrome ./tests/homepage.testcafe --reporter spec,cucumber-json:reports/report.json --reporter-app-name='My App' --reporter-app-version=1.0.0",
+    "testJs": "./node_modules/.bin/testcafe chrome ./tests/homepage.testcafe.js --reporter  spec,cucumber-json:reports/report.json --reporter-app-name='My App' --reporter-app-version=1.0.0",
+    "report": "node report-generator.js"
+  },
+  "devDependencies": {
+    "html-entities": "1.2.1",
+    "moment-duration-format": "^2.3.2",
+    "multiple-cucumber-html-reporter": "^1.10.2",
+    "object.keys": "0.1.0",
+    "object.values": "1.0.4",
+    "qrcode-terminal": "0.12.0",
+    "request": "^2.88.0",
+    "shelljs": "0.8.1",
+    "testcafe": "^1.3.3",
+    "testcafe-reporter-cucumber-json": "^2.0.0"
+  }
+}
